@@ -4,9 +4,9 @@ function Column({name, column, color, items, moveItem, addItem, changeName, dele
 
   return (
     <div className="column" style={{backgroundColor: color}}>
-      <h2 className="columnName">{name}</h2>
+      <h2 className="column__name">{name}</h2>
       <button type="button" onClick={() => addItem(column)}>Add an item</button>
-      <div className="items">
+      <div>
         {items && items.map((item)=>{
           return <Item 
             key={item.id} 

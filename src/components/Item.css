@@ -7,19 +7,19 @@
   position: relative;
 }
 
-.buttons {
+.item__buttons {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.editForm {
+.item__editForm {
   display: flex;
   flex-direction: column;
   appearance: none;
 }
 
-.delete {
+.item__delete {
   appearance: none;
   position: absolute;
   right: 0.5em;
@@ -27,11 +27,11 @@
   color: darkred;
 }
 
-.input {
+.item__input {
   margin-top: 1em;
   margin-right: 0.3em;
 }
 
-.setName {
+.item__setName {
   margin: 0.3em;
 }

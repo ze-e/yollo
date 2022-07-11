@@ -5,6 +5,6 @@
   padding: 1em;
 }
 
-.columnName {
+.column__name {
   text-transform: capitalize;
 }

@@ -100,12 +100,13 @@ function App() {
     setData([...newVal]);
   }
 
-
-
   return (
-    <div className="App">
-      <header><img className='App-logo' src={logo} alt="logo" /><h1 className="title">Yollo</h1></header>
-      <div className = "columns">
+    <div className="app">
+      <header className="app__header">
+        <img className='app__logo' src={logo} alt="logo" />
+        <h1 className="app__title">Yollo</h1>
+      </header>
+      <div className = "app__columns">
         {columns && columns.sort((column1, column2) => column1.column - column2.column).map((column, index) => {
           return (
           <Column 
