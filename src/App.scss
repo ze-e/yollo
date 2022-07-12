@@ -1,0 +1,52 @@
+.app {
+  &__header {
+    display: flex;
+  }
+  &__title{
+    text-align: left;
+    align-self: flex-start;
+  }
+  
+  &__logo {
+    text-align: left;
+    height: 10vmin;
+    pointer-events: none;
+  }
+  
+  &__columns {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    min-height: 600px;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .app{ 
+    &__logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .app {
+    &__columns {
+      flex-direction: column;
+    }
+  }
+}

@@ -3,8 +3,7 @@
   flex-basis: 50%;
   margin: 1em;
   padding: 1em;
-}
-
-.column__name {
-  text-transform: capitalize;
+  &__name {
+    text-transform: capitalize;
+  }
 }
