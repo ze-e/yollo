@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import Column from './components/Column';
+import logo from '../logo.svg';
+import Column from './Column';
 import React from 'react';
 
 function App() {
@@ -64,7 +64,7 @@ function App() {
 
   function deleteItem(id){
     const newVal = data.filter(item => item.id !== id);
-    if (window.confirm("Are you sure you want to delete?") == true) setData([...newVal]);
+    if (window.confirm("Are you sure you want to delete?") === true) setData([...newVal]);
   }
 
   function moveItem(id, changeBy){
